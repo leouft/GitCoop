@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
     static void main(){
 
@@ -14,7 +14,7 @@ public class Main {
         int op;
         do{
             int a, b;
-            System.out.print("O que deseja fazer?\nSomar [1]\nSubtrair [2]\nMultiplicar [3]\nDividir [4]\nSair [0]\nOpção: )");
+            System.out.print("O que deseja fazer?\nSomar [1]\nSubtrair [2]\nMultiplicar [3]\nDividir [4]\nSair [0]\nOpção: ");
             op = sc.nextInt();
             switch (op){
                 case 1:
