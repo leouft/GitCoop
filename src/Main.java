@@ -13,40 +13,40 @@ public class Main {
     static void menu(){
         int op;
         do{
-            int a, b;
-            System.out.print("O que deseja fazer?\nSomar [1]\nSubtrair [2]\nMultiplicar [3]\nDividir [4]\nSair [0]\nOpção: ");
+            float a, b;
+            System.out.print("\nO que deseja fazer?\nSomar [1]\nSubtrair [2]\nMultiplicar [3]\nDividir [4]\nSair [0]\nOpção: ");
             op = sc.nextInt();
             switch (op){
                 case 1:
                     System.out.print("Digite os números a serem somados: ");
-                    a = sc.nextInt();
-                    b = sc.nextInt();
-                    System.out.println("Soma: " + soma(a, b));
+                    a = sc.nextFloat();
+                    b = sc.nextFloat();
+                    System.out.println("\nSoma: " + soma(a, b));
                     break;
                 case 2:
                     System.out.print("Digite os números a serem subtraídos: ");
-                    a = sc.nextInt();
-                    b = sc.nextInt();
-                    System.out.println("Subtração: " + sub(a, b));
+                    a = sc.nextFloat();
+                    b = sc.nextFloat();
+                    System.out.println("\nSubtração: " + sub(a, b));
                     break;
                 case 3:
                     System.out.print("Digite os números a serem multiplicados: ");
-                    a = sc.nextInt();
-                    b = sc.nextInt();
-                    System.out.println("Multiplicação: " + multi(a, b));
+                    a = sc.nextFloat();
+                    b = sc.nextFloat();
+                    System.out.println("\nMultiplicação: " + multi(a, b));
                     break;
                 case 4:
                     System.out.print("Digite os números a serem divididos: ");
-                    a = sc.nextInt();
-                    b = sc.nextInt();
+                    a = sc.nextFloat();
+                    b = sc.nextFloat();
                     if (b == 0){
-                        System.out.println("Não é possível dividir por zero.");
+                        System.out.println("\nNão é possível dividir por zero.");
                     } else {
-                        System.out.println("Divisão: " + div(a, b));
+                        System.out.println("\nDivisão: " + div(a, b));
                         }
                     break;
                 case 0:
-                    System.out.println("Saindo...");
+                    System.out.println("\nSaindo...");
                     break;
                 default:
                     System.out.println("Opção inválida.");
@@ -54,19 +54,19 @@ public class Main {
         } while (op != 0);
     }
 
-    static int sub(int a, int b){
+    static float sub(float a, float b){
         return a - b;
     }
 
-    static int div(int a, int b){
+    static float div(float a, float b){
         return a / b;
     }
 
-    static int soma(int a, int b){
+    static float soma(float a, float b){
         return(a+b);
     }
 
-    static int multi(int a, int b){
+    static float multi(float a, float b){
         return(a*b);
     }
 }
