@@ -33,7 +33,7 @@ public class Main {
                     System.out.print("Digite os números a serem multiplicados: ");
                     a = sc.nextInt();
                     b = sc.nextInt();
-                    System.out.println("Multiplicação: " + mult(a, b));
+                    System.out.println("Multiplicação: " + multi(a, b));
                     break;
                 case 4:
                     System.out.print("Digite os números a serem divididos: ");
@@ -51,7 +51,7 @@ public class Main {
                 default:
                     System.out.println("Opção inválida.");
             }
-        }
+        } while (op != 0);
     }
 
     static int sub(int a, int b){
@@ -60,5 +60,13 @@ public class Main {
 
     static int div(int a, int b){
         return a / b;
+    }
+
+    static int soma(int a, int b){
+        return(a+b);
+    }
+
+    static int multi(int a, int b){
+        return(a*b);
     }
 }
